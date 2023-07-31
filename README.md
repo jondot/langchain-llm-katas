@@ -4,9 +4,9 @@ Welcome to **langchain & llm katas**! This is a an open-source project designed 
 
 By completing tests using `pytest`, you'll gain hands-on experience and have a lot of fun in the process!
 
-<center>
-<img width="640" src="screen.png">
-</center>
+<p align="center">
+  <img width="640" src="screen.png">
+</p>
 
 ## Quick Start
 
