@@ -1,10 +1,10 @@
-### Learn langchain & LLMs through code  Katas
+# Learn langchain & LLMs through code  Katas
 
 Welcome to **langchain & llm katas**! This is a an open-source project designed to help you improve your skills with AI engineering using LLMs and the `langchain` library. 
 
 By completing tests using `pytest`, you'll gain hands-on experience and have a lot of fun in the process!
 
-#### Quick Start
+## Quick Start
 
 1. **Clone this repository**
 
@@ -38,7 +38,7 @@ By completing tests using `pytest`, you'll gain hands-on experience and have a l
 
    Alternatively, you can download a binary from [releases](https://github.com/jondot/devstart/releases/tag/v0.7.0).
 
-#### Getting Started
+## Getting Started
 
 To begin your journey, you'll need to solve various tests and make all the tests pass successfully. It will help you learn how to use LLMs and the `langchain` library effectively.
 
@@ -54,7 +54,7 @@ If you prefer not to install `devstart`, use these commands instead:
 - Run `poetry install` to install dependencies.
 - Start tests with `poetry run ptw . --now --disable-warnings`.
 
-#### Best Way to Learn
+## Best Way to Learn
 
 Learning is an adventure! Embrace the challenges and discover the best solutions by:
 
@@ -68,7 +68,7 @@ Learning is an adventure! Embrace the challenges and discover the best solutions
 
    This will provide hints for solving the challenges. Search for the test name to find relevant tips.
 
-#### Stay Updated
+## Stay Updated
 
 To stay updated with the latest developments, new features, and announcements, consider:
 
@@ -76,7 +76,7 @@ To stay updated with the latest developments, new features, and announcements, c
 - **Starring**: Show your support by starring the repository on GitHub.
 - **Social Media**: Follow our official social media channels for updates and community interactions.
 
-#### Contributing
+## Contributing
 
 We welcome more contributions! Whether you're fixing bugs, adding new features, or improving documentation, your contributions are highly valued and appreciated.
 
@@ -95,7 +95,7 @@ When adding new tests keep in mind:
 * Try to be short, and give a helpful `TODO` message
 * If possible, have fun. For example use example data or texts that are fun, heartwarming, classics (songs, books, TV), but not offensive
 
-#### Code of Conduct
+## Code of Conduct
 
 This project is committed to providing a friendly, inclusive, and harassment-free environment for all contributors and users. We follow the [Contributor Covenant Code of Conduct](https://www.contributor-covenant.org/version/2/0/code_of_conduct/) and expect everyone involved with the project to adhere to these guidelines.
 
