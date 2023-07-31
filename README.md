@@ -2,6 +2,11 @@
 # Quick Start
 
 1. **Clone this repo**
+
+```
+$ git clone git@github.com:jondot/langchain-llm-katas.git
+```
+
 2. **Install [`poetry`](https://github.com/python-poetry/poetry)**
 
 Universal installer:
