@@ -22,7 +22,9 @@ $ pipx install poetry
 ```
 
 
-3. **Install [`devstart`](https://github.com/jondot/devstart)**
+3. (optional) **Install [`devstart`](https://github.com/jondot/devstart)**
+
+`devstart` can help you run common commands as shortcuts.
 
 With `brew`:
 
@@ -38,12 +40,18 @@ You will be practicing using _LLMs_, `langchain`, and other tools through comple
 
 **The rules are simple: make all tests pass.**
 
-Using `devstart`, you can set up your repo for action:
+Using `devstart`, you can set up your repo for action
 
 * `ds i` to install deps
 * `ds s` to start
 
 > `ds s` will run a pytest watcher, which will re-run test as you make modification. The first run may take longer than additional one.
+
+
+If you did not install `devstart`, you can use these commands:
+
+* `poetry install` to install deps
+* `poetry run ptw . --now --disable-warnings` to start
 
 ## Best way to learn
 
