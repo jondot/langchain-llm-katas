@@ -1,0 +1,79 @@
+[tool.poetry]
+name = "llmkatas"
+version = "0.1.0"
+description = ""
+authors = ["Dotan Nahum <jondotan@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.scripts]
+hints = "llmkatas:hints"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+llama-index = "^0.7.11.post1"
+toolz = "^0.12.0"
+pydantic = "^1"                  # langchain does not support v2 yet https://github.com/langchain-ai/langchain/issues/6841
+tiktoken = "^0.4.0"
+pymupdf = "^1.22.5"
+unstructured = "^0.8.4"
+gpt4all = "^1.0.8"
+sentence-transformers = "^2.2.2"
+faiss-cpu = "^1.7.4"
+pyyaml = "^6.0.1"
+prompt-toolkit = "^3.0.39"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.0"
+pytest-cov = "^4.1.0"
+mypy = "^1.4.1"
+pytest-watcher = "^0.3.4"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.ruff]
+fix = true
+unfixable = [
+  "ERA", # do not autoremove commented out code
+]
+target-version = "py38"
+line-length = 88
+extend-select = [
+  "B",   # flake8-bugbear
+  "C4",  # flake8-comprehensions
+  "ERA", # flake8-eradicate/eradicate
+  "I",   # isort
+  "N",   # pep8-naming
+  "PIE", # flake8-pie
+  "PGH", # pygrep
+  "RUF", # ruff checks
+  "SIM", # flake8-simplify
+  "TCH", # flake8-type-checking
+  "TID", # flake8-tidy-imports
+  "UP",  # pyupgrade
+]
+ignore = [
+  "B904", # use 'raise ... from err'
+  "B905", # use explicit 'strict=' parameter with 'zip()'
+  "N818", #  Exception name should be named with an Error suffix
+]
+extend-exclude = [
+  "docs/*",
+  # External to the project's coding standards
+  "tests/**/fixtures/*",
+]
+
+
+[tool.mypy]
+files = "llmkatas, tests"
+mypy_path = "llmkatas"
+show_error_codes = true
+warn_no_return = false
+
+# pyproject.toml
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = "about_*.py"
+norecursedirs = ".venv .pytest_cache .mypy_cache"

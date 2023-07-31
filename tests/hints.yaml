@@ -1,0 +1,46 @@
+
+- test: test_text_splitter_and_long_lines
+  hint: >
+    try this:
+    
+    ```python
+        splitter = RecursiveCharacterTextSplitter(
+            chunk_size=50, chunk_overlap=10, length_function=len
+        )
+    ```
+- test: test_fewshot_prompt
+  hint: >
+    try this:
+
+    ```python
+      shot_example = PromptTemplate(
+          input_variables=["category", "progression"],
+          template="category: {category}\nchord progression: {progression}",
+      )
+      prompt = FewShotPromptTemplate(
+          examples=shots,
+          example_prompt=shot_example,
+          suffix="Qustion: act as a musical expert. Give\
+          me a chord progression for {query}",
+          input_variables=["query"],
+      )
+    ```
+- test: test_read_pdf
+  hint: >
+    try this:
+    
+    ```python
+    from toolz import map
+    list(map(lambda page: page.get_text(), pdf))  # noqa: C417
+    ```
+- test: test_loaders_can_work_with_splitters
+  hint: >
+    try this:
+    
+    ```python
+    loader.load_and_split(<your splitter>)
+    ```
+- test: test_splitting_is_important
+  hint: >
+    choose a splitter that can generate many pieces
+    of text. A vector db can work with those.
